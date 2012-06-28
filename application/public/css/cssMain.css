@@ -1,0 +1,41 @@
+body{
+	background: gray;
+}
+
+.main{
+	width: 600px;
+	margin: auto;
+	padding: 5px;
+	background: white;
+}
+
+.menus{
+	background: white;
+	border: 2px gray solid;
+	height: 70px;
+	padding: 5px;
+
+}
+
+#content{
+	background: blue;
+	padding: 5px;
+	height: 250px;
+}
+
+.footer{
+	height: 15px;
+	background: gray;
+	padding: 5px;
+}
+
+.ulmenu{
+	list-style: none;
+	margin-left: 50px;
+}
+
+.ulmenu li{
+	float: left;
+	margin-left: 30px;
+	cursor: pointer;
+}
