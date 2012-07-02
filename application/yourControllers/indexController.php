@@ -1,7 +1,7 @@
 <?php
 
 /**
-* just one class
+* the index class
 */
 
 class indexController extends baseController

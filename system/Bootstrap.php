@@ -6,7 +6,7 @@
 
 class bootstrap
 {
-	public static function run(Request $req){
+	public static function run( Request $req ){
 
 		$controller = $req->getController();
 		//$controller = $req->getController();
@@ -25,12 +25,14 @@ class bootstrap
 			}
 			if(isset($params)){
 				call_user_func_array(array($controller, $method), $params);
+
 			}else{
 				call_user_func(array($controller, $method));
+
 			}
 
 		}else{
-			throw new Exception('not found');
+			throw new Exception($controller ' not found');
 		}
 	}
 }
