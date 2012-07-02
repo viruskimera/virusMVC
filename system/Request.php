@@ -15,7 +15,7 @@ class Request{
 			$url = array_filter($url);
 
 			$this->_controller = strtolower(array_shift( $url ));
-			$this->_method = strtolower(array_shift( $url ));
+			$this->_method = strtolower( array_shift( $url ) );
 			$this->_params = $url;
 		}
 

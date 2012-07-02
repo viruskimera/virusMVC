@@ -14,7 +14,7 @@ class bootstrap
 		$method = $req->getMethod();
 		$params = $req->getParams();
 
-		if(is_readable($pathController)){
+		if(is_readable( $pathController )){
 			require_once $pathController;
 			$controller = new $controller;'';
 
@@ -27,7 +27,7 @@ class bootstrap
 				call_user_func_array(array($controller, $method), $params);
 
 			}else{
-				call_user_func(array($controller, $method));
+				call_user_func( array($controller, $method) );
 
 			}
 

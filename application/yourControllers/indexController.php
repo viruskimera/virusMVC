@@ -15,7 +15,7 @@ class indexController extends baseController
 			'jsPath' => BASE_URL . 'application' . DS . 'public' . DS . 'js',
 			'imgPath' => BASE_URL . 'application' . DS . 'public' . DS . 'imgs',
 			'viewsPath' => BASE_URL . 'application' . DS . 'yourviews',
-			'ctrlPath' => BASE_URL ));
+			'ctrlPath' => BASE_URL ) );
 
 		$this->display('template.tpl');
 	}
